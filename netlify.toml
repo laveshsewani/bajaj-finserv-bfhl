@@ -1,0 +1,13 @@
+[[redirects]]
+  from = "/bfhl"
+  to = "/.netlify/functions/bfhl"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build]
+  publish = "frontend/dist"
+  command = "cd frontend && npm install && npm run build"
